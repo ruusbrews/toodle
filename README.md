@@ -14,6 +14,18 @@ This repo is only for the basic Electron template that you can clone to build wh
 
 ---
 
+## What’s Included
+
+- Basic Electron setup
+- Single window configuration
+- Frameless, non-resizable window
+- Draggable app window using CSS
+- Plain HTML / CSS / JavaScript (no frameworks)
+
+You can now customize the UI, add features, or turn this into any desktop app you want.
+
+---
+
 ## What this template is for 
 
 This template is great if you are:
@@ -77,7 +89,7 @@ Before using this template, make sure you have:
 
 ## Step by step set up
 
-### Install Package Managers (if you don’t have one on your computer)
+### 1. Install Package Managers (if you don’t have one on your computer)
 
 MacOS: Homebrew ([https://brew.sh](https://brew.sh/))
 
@@ -107,3 +119,40 @@ If both commands return version numbers, you’re good to go
 Download Node.js directly from: https://nodejs.org
 
 and follow their installation instructions.
+
+
+### 3. Clone This Repo
+
+```bash
+gitclone https://github.com/nasha-wanich/electron-app-template.git
+cd electron-app-template
+```
+
+### 4. Install Dependencies
+
+```bash
+npm install
+```
+
+### 5. Run the App
+
+```bash
+npm run start
+```
+
+This will launch a simple Electron desktop window.
+
+---
+
+## Next Steps
+
+- Modify `index.html` to build your app layout
+- Style your app UI in `styles.css`
+- Add your app logic in `script.js`
+- Adjust window behavior in `main.js`  (ex. size, transparency etc.)
+
+---
+
+## Want a Beginner Walkthrough Project?
+
+If you want a step-by-step desktop app beginner tutorial, check out this repo where we build a calendar widget together: https://github.com/nasha-wanich/little-calendar
