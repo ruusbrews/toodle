@@ -10,7 +10,7 @@ This repo is part of my YouTube tutorial on setting up your very first Electron 
 
 ## Tutorial Video
 
-This repo is a part of my Youtube video tutorial on how to set up your very first desktop application. See the video here: 
+This repo is a part of my Youtube video tutorial on how to set up your very first desktop application. See the video here: https://www.youtube.com/watch?v=btxGSJ3Dh8E&t=373s
 
 This repo is only for the basic Electron template that you can clone to build whatever you want. But if you're interested in a beginner demonstration tutorial too, see this repositary for a simple Calendar Widget: https://github.com/nasha-wanich/little-calendar 
 
