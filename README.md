@@ -8,12 +8,14 @@
 
 ### Setup
 
-1. Navigate to the project directory:
+1. Clone directory:
    ```
-   cd c:\Users\muham\Desktop\toodle
+   git clone https://github.com/ruusbrews/toodle.git
    ```
 
-2. Install dependencies:
+2. Navigate to folder in terminal
+
+3. Install dependencies:
    ```
    npm install
    ```
