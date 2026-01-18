@@ -1,8 +1,16 @@
 {
-  "name": "electron-app",
+  "name": "toodle",
   "version": "1.0.0",
+  "description": "A desktop to-do list app with custom timer",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dev": "electron . --dev"
+  },
+  "keywords": ["todo", "timer", "desktop"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "latest"
   }
 }

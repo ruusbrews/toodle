@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toodle - To-Do List & Timer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left Panel: To-Do List -->
+    <div class="panel todo-panel">
+      <h1>To-Do List</h1>
+      <div class="input-group">
+        <input 
+          type="text" 
+          id="taskInput" 
+          placeholder="Add a new task..."
+          class="task-input"
+        >
+        <button id="addTaskBtn" class="add-btn">Add</button>
+      </div>
+      <ul id="taskList" class="task-list" ondrop="handleDrop(event)" ondragover="handleDragOver(event)">
+        <li class="placeholder">No tasks yet. Add one to get started!</li>
+      </ul>
+    </div>
+
+    <!-- Right Panel: Timer -->
+    <div class="panel timer-panel">
+      <h1>Timer</h1>
+      <div class="preset-buttons">
+        <button class="preset-btn" onclick="setTimer(30)">30m</button>
+        <button class="preset-btn" onclick="setTimer(60)">1h</button>
+        <button class="preset-btn" onclick="setTimer(90)">1h30m</button>
+        <button class="preset-btn" onclick="setTimer(120)">2h</button>
+      </div>
+      <div class="timer-display">
+        <span id="timerMinutes">25</span>
+        <span>:</span>
+        <span id="timerSeconds">00</span>
+      </div>
+      <div class="timer-controls">
+        <button id="startBtn" class="control-btn">Start</button>
+        <button id="pauseBtn" class="control-btn">Pause</button>
+        <button id="resetBtn" class="control-btn">Reset</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
