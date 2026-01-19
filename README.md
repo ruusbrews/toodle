@@ -1,12 +1,18 @@
 # Toodle - To-Do List Desktop App
 
+### Welcome!
+
+You can install the app to use on desktop using the executable file **'Toodle Setup 1.0.0'** in the dist folder. Feel free to follow the rest of the steps to try customising or editing the code for yourself.
+
+Toodle is a to-do list and timer app that lets you add, remove and strike through tasks, choose how much time you want to work for, and change the theme and background with just one click. I also added a bunch of cute sound effects!!
+
 ## Installation
 
 ### Requirements
 - Node.js (v14 or higher)
 - npm (comes with Node.js)
 
-### Setup
+### Setup (to customise or change code)
 
 1. Clone directory:
    ```

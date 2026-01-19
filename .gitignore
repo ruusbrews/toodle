@@ -1,1 +1,8 @@
+# Ignore Node.js dependencies
 node_modules/
+
+# Ignore build output from electron-builder
+dist/
+
+# Log files
+*.log

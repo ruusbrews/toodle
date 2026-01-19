@@ -8,6 +8,7 @@ function createWindow() {
     width: 1000,
     height: 600,
     resizable: false,
+    icon: path.join(__dirname, 'assets/toodle_logo.ico'), 
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       contextIsolation: true,
