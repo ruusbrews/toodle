@@ -4,13 +4,10 @@
 
 Toodle is a to-do list and timer app that lets you add, remove and strike through tasks, choose how much time you want to work for, and change the theme and background with just one click. I also added a bunch of cute sound effects!!
 
-You can install the app to use on desktop by cloning the repo and creating an executable file using the following commands in terminal:
+**Download and install using GitHub releases:**
+👉 https://github.com/ruusbrews/toodle/releases/latest
 
-```
-npm install
-npm run dist
-```
-Then just run the executable file located in the `dist` folder. 
+Only on windows - find the file in Downloads and run the installer.
 
 Feel free to follow the rest of the steps to try customising or editing the code for yourself.
 
