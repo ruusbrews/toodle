@@ -2,9 +2,17 @@
 
 ### Welcome!
 
-You can install the app to use on desktop using the executable file **'Toodle Setup 1.0.0'** in the dist folder. Feel free to follow the rest of the steps to try customising or editing the code for yourself.
-
 Toodle is a to-do list and timer app that lets you add, remove and strike through tasks, choose how much time you want to work for, and change the theme and background with just one click. I also added a bunch of cute sound effects!!
+
+You can install the app to use on desktop by cloning the repo and creating an executable file using the following commands in terminal:
+
+```
+npm install
+npm run dist
+```
+Then just run the executable file located in the `dist` folder. 
+
+Feel free to follow the rest of the steps to try customising or editing the code for yourself.
 
 ## Installation
 
