@@ -2,9 +2,9 @@
 
 ### Welcome!
 
-Toodle is a to-do list and timer app that lets you add, remove and strike through tasks, choose how much time you want to work for, and change the theme and background with just one click. I also added a bunch of cute sound effects!!
+Toodle is a to-do list and timer app that lets you add, remove and strike through tasks, choose how much time you want to work for, and change the theme and background with just one click. I also added a bunch of cute sound effects!
 
-**Download and install the Toodle desktop app and try it for yourself!**
+**Download and install the Toodle desktop app and try it for yourself**
 👉 https://github.com/ruusbrews/toodle/releases/latest
 
 Only on windows - find the file in Downloads and run the installer.
