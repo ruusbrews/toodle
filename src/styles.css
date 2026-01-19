@@ -4,34 +4,46 @@
   box-sizing: border-box;
 }
 
+:root {
+  --theme-color: #7FB3D5;
+  --theme-color-hover: #5A8FB3;
+  --theme-title-color: #3A5A78;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: url('../images/ocean.jpg') center/cover no-repeat;
   height: 600px;
+  overflow: hidden;
+  transition: background 0.8s ease-in-out;
 }
 
 .container {
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 100px);
   gap: 1px;
+  margin: 50px;
 }
 
 .panel {
   flex: 1;
   padding: 20px;
-  overflow-y: auto;
+  overflow: hidden;
   background: white;
 }
 
 .panel h1 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #333;
+  color: var(--theme-title-color);
+  text-align: center;
 }
 
 /* To-Do Panel */
 .todo-panel {
   border-right: 1px solid #e0e0e0;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
 
 .input-group {
@@ -51,13 +63,13 @@ body {
 
 .task-input:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.1);
+  border-color: var(--theme-color);
+  box-shadow: 0 0 0 2px rgba(127, 179, 213, 0.3);
 }
 
 .add-btn {
   padding: 10px 20px;
-  background: #667eea;
+  background: var(--theme-color);
   color: white;
   border: none;
   border-radius: 4px;
@@ -67,7 +79,7 @@ body {
 }
 
 .add-btn:hover {
-  background: #5568d3;
+  background: var(--theme-color-hover);
 }
 
 .task-list {
@@ -151,6 +163,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .preset-buttons {
@@ -174,20 +188,21 @@ body {
 }
 
 .preset-btn:hover {
-  border-color: #667eea;
-  background: #f8f8ff;
+  border-color: var(--theme-color);
+  background: var(--theme-color-hover);
+  color: white;
 }
 
 .preset-btn.active {
-  background: #667eea;
+  background: var(--theme-color);
   color: white;
-  border-color: #667eea;
+  border-color: var(--theme-color);
 }
 
 .timer-display {
   font-size: 72px;
   font-weight: bold;
-  color: #667eea;
+  color: var(--theme-color);
   margin: 40px 0;
   font-family: 'Courier New', monospace;
   letter-spacing: 4px;
@@ -200,7 +215,7 @@ body {
 
 .control-btn {
   padding: 12px 24px;
-  background: #667eea;
+  background: var(--theme-color);
   color: white;
   border: none;
   border-radius: 4px;
@@ -211,7 +226,7 @@ body {
 }
 
 .control-btn:hover {
-  background: #5568d3;
+  background: var(--theme-color-hover);
 }
 
 .control-btn:active {
@@ -234,4 +249,43 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+/* Background Switcher Circles */
+.bg-switcher {
+  position: fixed;
+  bottom: 70px;
+  right: 80px;
+  display: flex;
+  gap: 12px;
+}
+
+.bg-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: all 0.3s;
+}
+
+.bg-circle:hover {
+  transform: scale(1.1);
+}
+
+.bg-circle.active {
+  border-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.ocean-circle {
+  background: #87CEEB;
+}
+
+.sunset-circle {
+  background: #FFB6C1;
+}
+
+.mountains-circle {
+  background: #90EE90;
 }

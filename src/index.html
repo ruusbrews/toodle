@@ -7,10 +7,22 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Audio Elements -->
+  <audio id="beepSound" src="../sounds/electronic_timer_beep.wav"></audio>
+  <audio id="clickSound" src="../sounds/button_click.wav"></audio>
+  <audio id="strikeThroughSound" src="../sounds/strike_through.wav"></audio>
+  <audio id="crumplingPaperSound" src="../sounds/crumpling_paper.wav"></audio>
+  
+  <div class="bg-switcher">
+    <div class="bg-circle ocean-circle active" data-bg="ocean" onclick="switchBackground('ocean')"></div>
+    <div class="bg-circle sunset-circle" data-bg="sunset" onclick="switchBackground('sunset')"></div>
+    <div class="bg-circle mountains-circle" data-bg="mountains" onclick="switchBackground('mountains')"></div>
+  </div>
+  
   <div class="container">
     <!-- Left Panel: To-Do List -->
     <div class="panel todo-panel">
-      <h1>To-Do List</h1>
+      <h1>To Do</h1>
       <div class="input-group">
         <input 
           type="text" 
